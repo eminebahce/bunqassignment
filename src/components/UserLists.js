@@ -3,8 +3,6 @@ import {ListItem, ListItemAvatar, ListItemText, Avatar, Typography} from '@mater
 import Divider from '@material-ui/core/Divider';
 import {Link} from 'react-router-dom';
 
-
-
 export default function UserLists(props) {
 
     return (
@@ -29,7 +27,7 @@ export default function UserLists(props) {
                                             color="textPrimary">
                                     {user.name}
                                 </Typography>
-                                {`-${user.name}`}
+                                {`- ${user.name}`}
                             </React.Fragment>
                         }
                     />

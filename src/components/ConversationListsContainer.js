@@ -8,6 +8,7 @@ import {Grid, List} from '@material-ui/core';
 
 class ConversationListsContainer extends Component {
 
+
     componentDidMount() {
         const userId = this.props.match.params.id;
         this.props.getConversations(userId);
@@ -31,7 +32,8 @@ class ConversationListsContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    conversations: state.conversations
+    conversations: state.conversations,
+    selectedUser: state
 });
 
 export default connect(mapStateToProps, {getConversations})(ConversationListsContainer);

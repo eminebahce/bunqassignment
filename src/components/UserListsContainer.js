@@ -18,7 +18,7 @@ class UserListsContainer extends Component {
                 <Grid container justify="center" alignContent="center">
                     <Grid item xs={3}>
                         <List>
-                            <UserLists users={this.props.users}/>
+                            <UserLists users={this.props.users} />
                         </List>
                     </Grid>
                 </Grid>
